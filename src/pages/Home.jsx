@@ -80,7 +80,7 @@ export default function Home() {
       </section>
 
       {/* ── Stats Bar ── */}
-      <section className="bg-dark-200 border-b border-dark-300 grid grid-cols-2 md:grid-cols-4">
+      <section className="bg-dark border-b border-dark-300 grid grid-cols-2 md:grid-cols-4">
         {[
           { num: STATS.fellows, suffix: '', label: 'Fellows' },
           { num: STATS.districts, suffix: '+', label: 'Districts' },

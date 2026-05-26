@@ -26,7 +26,7 @@ export default function FellowCard({ fellow, index = 0 }) {
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.5, delay: (index % 6) * 0.07, ease: [0.22, 1, 0.36, 1] }}
     >
-      <Link to={`/fellows/${fellow.id}`} className="flex flex-col bg-dark-200 rounded-2xl border border-dark-300 overflow-hidden h-full transition-all duration-250 hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(0,166,196,0.14)] hover:border-teal">
+      <Link to={`/fellows/${fellow.id}`} className="flex flex-col bg-dark rounded-2xl border border-dark-300 overflow-hidden h-full transition-all duration-250 hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(0,166,196,0.14)] hover:border-teal">
         <div className="bg-gradient-to-br from-teal to-green text-white font-display text-xl font-extrabold flex items-center justify-center h-[90px] tracking-wider">
           {initials}
         </div>
