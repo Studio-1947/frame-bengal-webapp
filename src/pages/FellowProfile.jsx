@@ -39,9 +39,9 @@ export default function FellowProfile() {
     <main className="pt-[72px] min-h-screen bg-dark-100 relative">
       <div className="absolute top-0 left-0 right-0 h-[340px] bg-dark z-0" />
 
-      <div className="relative z-[1] max-w-[1200px] mx-auto px-8 pb-24">
+      <div className="relative z-[1] max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8 pb-16 sm:pb-24">
         <motion.div
-          className="flex items-center gap-3 py-8 text-sm text-white/45"
+          className="flex items-center gap-3 py-6 sm:py-8 text-sm text-white/45"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -50,10 +50,10 @@ export default function FellowProfile() {
           <span className="text-white/90">{fellow.name}</span>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-6 sm:gap-8 items-start">
           {/* Sidebar */}
           <motion.aside
-            className="bg-dark-200 rounded-2xl border border-dark-300 overflow-hidden sticky top-[calc(72px+1.5rem)]"
+            className="bg-dark-200 rounded-2xl border border-dark-300 overflow-hidden lg:sticky lg:top-[calc(72px+1.5rem)]"
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}

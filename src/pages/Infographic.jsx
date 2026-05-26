@@ -54,7 +54,7 @@ export default function Infographic() {
       {/* Header */}
       <section className="relative bg-dark py-20 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_80%_at_90%_50%,rgba(0,166,196,0.2)_0%,transparent_60%),radial-gradient(ellipse_40%_60%_at_0%_80%,rgba(136,178,83,0.12)_0%,transparent_50%)] pointer-events-none" />
-        <div className="max-w-[1200px] mx-auto px-8 relative">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8 relative">
           <motion.p
             className="font-display text-xs font-bold tracking-[0.16em] uppercase text-teal mb-5 flex items-center gap-3 before:content-[''] before:w-7 before:h-px before:bg-teal"
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ export default function Infographic() {
             FRAME Impact Report
           </motion.p>
           <motion.h1
-            className="text-[clamp(2.2rem,6vw,4.5rem)] font-extrabold text-off-white tracking-tighter leading-[1.1] mb-5"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-off-white tracking-tighter leading-[1.1] mb-5"
             initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
           >
             Mapping opportunity<br />
@@ -79,8 +79,8 @@ export default function Infographic() {
       </section>
 
       {/* Stats */}
-      <section className="bg-dark-200 py-16">
-        <div className="max-w-[1200px] mx-auto px-8">
+      <section className="bg-dark-200 py-12 md:py-16">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { num: STATS.fellows, suffix: '', label: 'Fellows selected', sub: 'From across West Bengal' },
@@ -110,16 +110,16 @@ export default function Infographic() {
 
       {/* District Bar Chart */}
       <section className="py-14 bg-dark-100">
-        <div className="max-w-[1200px] mx-auto px-8">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
           <motion.div
-            className="bg-dark-200 rounded-2xl border border-dark-300 p-8"
+            className="bg-dark-200 rounded-2xl border border-dark-300 p-4 sm:p-6 md:p-8"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
             <div className="mb-6">
               <p className="font-display text-[0.72rem] font-bold tracking-[0.14em] uppercase text-teal mb-2">District Representation</p>
-              <h2 className="text-xl font-bold tracking-tight text-off-white mb-2">Fellows by home district</h2>
+              <h2 className="text-lg sm:text-xl font-bold tracking-tight text-off-white mb-2">Fellows by home district</h2>
               <p className="text-sm text-gray-500 leading-relaxed max-w-[60ch]">
                 FRAME reaches students from {Object.keys(districtCounts).length} distinct home districts,
                 demonstrating the program's geographic breadth across West Bengal.
@@ -144,10 +144,10 @@ export default function Infographic() {
 
       {/* Two Charts Row */}
       <section className="pb-14 bg-dark-100">
-        <div className="max-w-[1200px] mx-auto px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             <motion.div
-              className="bg-dark-200 rounded-2xl border border-dark-300 p-8"
+              className="bg-dark-200 rounded-2xl border border-dark-300 p-4 sm:p-6 md:p-8"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -169,7 +169,7 @@ export default function Infographic() {
             </motion.div>
 
             <motion.div
-              className="bg-dark-200 rounded-2xl border border-dark-300 p-8"
+              className="bg-dark-200 rounded-2xl border border-dark-300 p-4 sm:p-6 md:p-8"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -194,8 +194,8 @@ export default function Infographic() {
       </section>
 
       {/* Notable Mentors */}
-      <section className="bg-dark py-20">
-        <div className="max-w-[1200px] mx-auto px-8">
+      <section className="bg-dark py-12 md:py-20">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
             <p className="font-display text-[0.72rem] font-bold tracking-[0.14em] uppercase text-teal mb-2">Mentor Network</p>
             <h2 className="text-xl font-bold tracking-tight text-off-white">Where our fellows learn</h2>
@@ -224,8 +224,8 @@ export default function Infographic() {
       </section>
 
       {/* Fellows Table */}
-      <section className="py-16 bg-dark-100">
-        <div className="max-w-[1200px] mx-auto px-8">
+      <section className="py-12 md:py-16 bg-dark-100">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <p className="font-display text-[0.72rem] font-bold tracking-[0.14em] uppercase text-teal mb-2">Full Cohort</p>
             <h2 className="text-xl font-bold tracking-tight text-off-white mb-6">All {STATS.fellows} FRAME Fellows</h2>

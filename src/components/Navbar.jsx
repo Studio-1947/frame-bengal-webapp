@@ -25,7 +25,7 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
-      <div className="max-w-[1200px] mx-auto px-8 h-[72px] flex items-center justify-between">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8 h-[72px] flex items-center justify-between">
         <Link to="/" className="flex items-center">
           <img src="/logo.webp" alt="FRAME Bengal" className="h-10 w-auto" />
         </Link>
@@ -63,7 +63,7 @@ export default function Navbar() {
       <AnimatePresence>
         {open && (
           <motion.div
-            className="overflow-hidden bg-dark-100 border-t border-dark-300 px-8 pb-6 pt-4 flex flex-col gap-4 md:hidden"
+            className="overflow-hidden bg-dark-100 border-t border-dark-300 px-4 sm:px-8 pb-6 pt-4 flex flex-col gap-4 md:hidden"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}

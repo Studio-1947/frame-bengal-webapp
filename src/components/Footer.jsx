@@ -2,12 +2,10 @@ import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <footer className="bg-dark text-off-white pt-14 pb-8 px-8">
+    <footer className="bg-dark text-off-white pt-10 sm:pt-14 pb-6 sm:pb-8 px-4 sm:px-6 md:px-8">
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-8 items-start">
         <div>
-          <div className="font-display text-2xl font-extrabold tracking-tight mb-2">
-            <span className="text-teal">F</span>RAME
-          </div>
+          <img src="/logo.webp" alt="FRAME Bengal" className="h-10 w-auto mb-2" />
           <p className="text-sm text-gray-400 italic">Shaping futures, beyond barriers.</p>
         </div>
         <div className="flex flex-col gap-3 sm:text-right">
