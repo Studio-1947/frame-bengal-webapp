@@ -6,6 +6,8 @@ import { fellows, STATS } from '../data/fellows'
 import { mentors } from '../data/mentors'
 import FellowCard from '../components/FellowCard'
 
+import WhoWeAre from '../components/WhoWeAre'
+
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: (i = 0) => ({
@@ -69,7 +71,7 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="absolute bottom-6 left-4 sm:left-8 flex-col items-center gap-2 font-display text-[0.7rem] tracking-[0.12em] uppercase text-white/30 hidden sm:flex"
+          className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 font-display text-[0.7rem] tracking-[0.12em] uppercase text-white/30 hidden sm:flex"
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }}
         >
           <span>Scroll</span>
@@ -100,6 +102,9 @@ export default function Home() {
           </motion.div>
         ))}
       </section>
+
+      {/* ── Who We Are ── */}
+      <WhoWeAre />
 
       {/* ── Mission ── */}
       <section className="py-16 md:py-28 bg-dark-100">
